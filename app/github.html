@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía GitHub ADSO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm mb-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <i class="bi bi-person-arms-up me-2 fs-5"></i>
+        <span>COMERCIO</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" 
+              aria-controls="menuNavegacion" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNavegacion">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-medium px-3" href="index.html" aria-current="page">
+              <i class="bi bi-house-door me-1"></i> Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium px-3" href="#servicios">
+              <i class="bi bi-tools me-1"></i> Servicios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium px-3" href="#quienes-somos">
+              <i class="bi bi-people me-1"></i> Quiénes somos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium px-3" href="tablas.html">
+              <i class="bi bi-table me-1"></i> Asesores
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-light text-success fw-bold w-100 w-lg-auto" href="formularios.html" role="button">
+              <i class="bi bi-send me-1"></i> Contáctanos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="text-dark mb-4">Guía GitHub ADSO</h2>
+
+    <div class="card mb-4">
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+        <span>1. Estructura del proyecto según la imagen</span>
+        <small class="text-light">Estructura - GitHub - Básico - Página</small>
+      </div>
+      <div class="card-body">
+        <p class="mb-3">El proyecto tiene una estructura organizada para un sitio web de varias páginas:</p>
+        <div class="bg-dark text-white p-3 rounded">
+          <pre class="m-0">taller3/
+├── app/
+│   ├── forms.html
+│   ├── tables.html
+│   └── github.html
+├── assets/
+│   ├── css/
+│   ├── img/
+│   └── js/
+├── index.html
+└── README.md</pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <span>2. Requisitos iniciales</span>
+        <small class="text-light">Estructura - GitHub - Básico - Página</small>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2">• Tener una cuenta activa en GitHub.</li>
+          <li class="mb-2">• Tener instalado Git en el computador.</li>
+          <li class="mb-2">• Tener instalado Visual Studio Code.</li>
+          <li>• Abrir la carpeta del proyecto desde Visual Studio Code.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+        <span>3. Configuración de Git desde Visual Studio Code</span>
+        <small class="text-light">Estructura - GitHub - Básico</small>
+      </div>
+      <div class="card-body">
+        <p class="mb-3">Abre la terminal integrada de Visual Studio Code</p>
+        <div class="bg-light border rounded p-2 mb-3">
+          <code>Menú Terminal → New Terminal</code>
+        </div>
+        <h6 class="mt-4 mb-2">Configura tu nombre y correo</h6>
+        <div class="bg-dark text-white p-3 rounded mb-3">
+          <pre class="m-0">git config --global user.name "Tu nombre"
+git config --global user.email "tu_correo@mail.com"</pre>
+        </div>
+        <h6 class="mt-4 mb-2">Verifica la configuración</h6>
+        <div class="bg-dark text-white p-3 rounded">
+          <pre class="m-0">git config --global --list</pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+        <span>4. Inicializar Git en el proyecto</span>
+        <small>Estructura - GitHub - Básico</small>
+      </div>
+      <div class="card-body">
+        <p class="mb-3">Ubícate en la carpeta del proyecto desde la terminal de VS Code</p>
+        <div class="bg-dark text-white p-3 rounded mb-3">
+          <pre class="m-0">git init
+git add .
+git commit -m "Primer commit: estructura inicial del proyecto"</pre>
+        </div>
+        <div class="alert alert-info p-2 mb-0">
+          Este primer commit guarda la versión inicial del proyecto, incluyendo todos los archivos creados hasta el momento.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

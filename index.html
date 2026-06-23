@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones Bootstrap 5 | Mi Sitio Web</title>
+    <meta name="description" content="Soluciones de calidad, experiencia y compromiso en cada proyecto. Conoce nuestros servicios y contáctanos.">
+    <meta name="author" content="Mi Sitio">
+    <meta name="theme-color" content="#198754">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <i class="bi bi-person-arms-up me-2 fs-5"></i>
+                <span>COMERCIO</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" 
+                    aria-controls="menuNavegacion" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium px-3" href="index.html" aria-current="page">
+                            <i class="bi bi-house-door me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium px-3" href="#servicios">
+                            <i class="bi bi-tools me-1"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium px-3" href="#quienes-somos">
+                            <i class="bi bi-people me-1"></i> Quiénes somos
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-light text-success fw-bold w-100 w-lg-auto" href="formularios.html" role="button">
+                            <i class="bi bi-send me-1"></i> Contacatanos
+                        </a>
+                    </li>
+                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium px-3" href="tablas.html" aria-current="page">
+                            <i class="bi bi-house-door me-1"></i> Acesores
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Inicio -->
+    <section id="inicio" class="bg-primary text-white py-5">
+        <div class="container text-center py-4">
+            <h1 class="display-5 fw-bold mb-3">Bienvenido a Mi Sitio</h1>
+            <p class="lead mb-0">Ofrecemos soluciones de calidad adaptadas a tus necesidades.</p>
+        </div>
+    </section>
+
+    <!-- Quiénes somos -->
+    <section id="quienes-somos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold text-primary">Quiénes somos</h2>
+            <p class="text-center mx-auto" style="max-width: 700px;">Somos una empresa dedicada a ofrecer soluciones de calidad, con amplia experiencia y total compromiso en cada proyecto que realizamos para nuestros clientes.</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-primary">Nuestros Servicios</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-3">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 text-success fw-semibold">ACCESORIA</h3>
+                            <p class="card-text text-muted mb-0">Te ofrecemos accesoria para empezar en tu negocio</p>
+                            <button type="button" class="btn btn-primary"><a href="Accesoria"></a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-3">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 text-success fw-semibold">CHARLAS SOBRE EL EMPRENDIMIENTO</h3>
+                            <p class="card-text text-muted mb-0">charlas sobre el emprendimiento</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-3">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 text-success fw-semibold">Servicio 3</h3>
+                            <p class="card-text text-muted mb-0">Descripción detallada del servicio que ofrecemos, con beneficios y características principales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-primary">Galería</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide shadow-lg rounded-4 overflow-hidden">
+
+                
+                <div class="carousel-indicators d-flex gap-2 mb-3">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" 
+                            class="active rounded-circle w-2 h-2" aria-current="true" aria-label="Diapositiva 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" 
+                            class="rounded-circle w-2 h-2" aria-label="Diapositiva 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" 
+                            class="rounded-circle w-2 h-2" aria-label="Diapositiva 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <img src="img/pajaro.jpg" class="d-block w-100 object-fit-cover" 
+                             alt="Fotografía de un pájaro en su hábitat natural, con colores vibrantes y entorno verde" 
+                             width="1200" height="500" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="img/imagen1.png" class="d-block w-100 object-fit-cover" 
+                             alt="Imagen representativa de nuestros trabajos, diseño moderno y limpio" 
+                             width="1200" height="500" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="img/perro.jpg" class="d-block w-100 object-fit-cover" 
+                             alt="Fotografía de un perro feliz al aire libre, día soleado y entorno natural" 
+                             width="1200" height="500" loading="lazy">
+                    </div>
+                </div>
+
+               
+                <button class="carousel-control-prev w-10" 
+                        type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" 
+                        aria-label="Anterior diapositiva">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next w-10" 
+                        type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" 
+                        aria-label="Siguiente diapositiva">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Mi Sitio Web - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
