@@ -3,31 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas Bootstrap</title>
-
+    <title>Formularios | A.PRO</title>
     <meta name="author" content="Santiago Avendaño Zapata">
-    <meta name="description" content="Currículum vitae de desarrolladores de software">
-    <meta name="keywords" content="CV, hoja de vida, desarrollador, SENA">
-
-    <meta name="theme-color" content="#1f4ea8">
+    <meta name="description" content="Formularios de registro e inicio de sesión para usuarios.">
+    <meta name="keywords" content="registro, login, formulario, acceso, SENA">
+    <meta name="theme-color" content="#000000">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
-
 <body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm mb-4">
         <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                <i class="bi bi-person-arms-up me-2 fs-4"></i>
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+                <i class="bi bi-person-arms-up me-2 fs-4 text-success"></i>
                 <span>A.PRO</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" 
@@ -37,27 +30,22 @@
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active fw-medium px-3" href="index.html" aria-current="page">
+                        <a class="nav-link fw-medium px-3" href="../index.html">
                             <i class="bi bi-house-door me-1"></i> Inicio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium px-3" href="#servicios">
-                            <i class="bi bi-tools me-1"></i> Servicios
+                        <a class="nav-link fw-medium px-3" href="tablas.html">
+                            <i class="bi bi-briefcase me-1"></i> Empleados
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium px-3" href="#quienes-somos">
-                            <i class="bi bi-people me-1"></i> Quiénes somos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-medium px-3" href="app/tablas.html">
-                            <i class="bi bi-table me-1"></i> Asesores
+                        <a class="nav-link fw-medium px-3" href="repositorio.html">
+                            <i class="bi bi-github me-1"></i> GitHub
                         </a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-light text-success fw-semibold w-100 w-lg-auto" href="app/formularios.html" role="button">
+                        <a class="nav-link active fw-medium px-3" href="formularios.html" aria-current="page">
                             <i class="bi bi-send me-1"></i> Contáctanos
                         </a>
                     </li>
@@ -66,17 +54,13 @@
         </div>
     </nav>
 
- 
-
- <!--Registro -->
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
-                <div class="card shadow-lg border-0 rounded-4">
+                <div class="card shadow-lg border border-success border-opacity-25 rounded-4">
                     <div class="card-body p-4 p-md-5">
-                        <h2 class="text-center text-primary fw-bold mb-3">REGISTRO</h2>
-                        <p class="text-center text-muted mb-4">Ingrese su correo y contraseña para registrarse</p>
-                        
+                        <h2 class="text-center text-success fw-bold mb-3">REGISTRO</h2>
+                        <p class="text-center text-secondary mb-4">Ingrese su correo y contraseña para registrarse</p>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -91,7 +75,7 @@
                                     <input type="password" id="pswd" class="form-control form-control-lg" placeholder="Ingresa tu contraseña" name="pswd" required>
                                 </div>
                                 <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-primary w-100 btn-lg fw-medium">Registrarse</button>
+                                    <button type="submit" class="btn btn-success w-100 btn-lg fw-medium">Registrarse</button>
                                 </div>
                             </div>
                         </form>
@@ -101,31 +85,29 @@
         </div>
     </div>
 
-    <!-- Login -->
-   <section id="login" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-4 text-primary">LOGIN</h2>
+    <section id="login" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-success fw-bold">INICIAR SESIÓN</h2>
+            <form class="col-md-6 mx-auto p-4 bg-white rounded border border-success border-opacity-25 shadow-sm">
+                <div class="mb-3">
+                    <label for="correo" class="form-label fw-medium">Correo electrónico</label>
+                    <input type="email" id="correo" class="form-control" placeholder="tu@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label fw-medium">Contraseña</label>
+                    <input type="password" id="contrasena" class="form-control" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Acceder</button>
+            </form>
+        </div>
+    </section>
 
-        <form class="col-md-6 mx-auto p-4 bg-white rounded border">
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" id="correo" class="form-control" placeholder="tu@correo.com" required>
-            </div>
-            <div class="mb-3">
-                <label for="contrasena" class="form-label">Contraseña</label>
-                <input type="password" id="contrasena" class="form-control" placeholder="Ingresa tu contraseña" required>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Bienvenido</button>
-        </form>
-    </div>
-</section>
-
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-black text-white py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2026 Mi Sitio Web - Todos los derechos reservados</p>
+            <p class="mb-0">&copy; 2026 A.PRO - Santiago Avendaño Zapata | Todos los derechos reservados</p>
         </div>
     </footer>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
