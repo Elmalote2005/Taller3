@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía GitHub | A.PRO</title>
+    <meta name="author" content="Santiago Avendaño Zapata">
+    <meta name="description" content="Guía paso a paso para usar Git y GitHub en proyectos de desarrollo web.">
+    <meta name="keywords" content="Git, GitHub, guía, desarrollo, SENA, ADSO">
+    <meta name="theme-color" content="#000000">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm mb-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <i class="bi bi-person-arms-up me-2 fs-4 text-success"></i>
+                <span>A.PRO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" 
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium px-3" href="index.html" aria-current="page">
+                            <i class="bi bi-house-door me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium px-3" href="app/tablas.html">
+                            <i class="bi bi-briefcase me-1"></i> Empleados
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium px-3" href="app/repositorio.html">
+                            <i class="bi bi-github me-1"></i> GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-success text-white fw-semibold w-100 w-lg-auto" href="app/formularios.html" role="button">
+                            <i class="bi bi-send me-1"></i> Contáctanos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <h2 class="text-success fw-bold mb-4">Guía GitHub ADSO</h2>
+
+        <div class="card shadow-sm border border-success border-opacity-25 rounded-4 mb-4">
+            <div class="card-header bg-black text-white d-flex justify-content-between align-items-center rounded-top-4">
+                <span>1. Estructura del proyecto</span>
+                <small class="text-light">Organización de archivos</small>
+            </div>
+            <div class="card-body">
+                <p class="mb-3">El proyecto tiene una estructura organizada para un sitio web de varias páginas:</p>
+                <div class="bg-dark text-white p-3 rounded-3">
+                    <pre class="m-0">taller3/
+├── app/
+│   ├── formularios.html
+│   ├── tablas.html
+│   └── repositorio.html
+├── assets/
+│   ├── css/
+│   ├── img/
+│   └── js/
+├── index.html
+└── README.md</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border border-success border-opacity-25 rounded-4 mb-4">
+            <div class="card-header bg-success text-white d-flex justify-content-between align-items-center rounded-top-4">
+                <span>2. Requisitos iniciales</span>
+                <small class="text-light">Herramientas necesarias</small>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2">• Tener una cuenta activa en GitHub.</li>
+                    <li class="mb-2">• Tener instalado Git en el computador.</li>
+                    <li class="mb-2">• Tener instalado Visual Studio Code.</li>
+                    <li>• Abrir la carpeta del proyecto desde Visual Studio Code.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border border-success border-opacity-25 rounded-4 mb-4">
+            <div class="card-header bg-black text-white d-flex justify-content-between align-items-center rounded-top-4">
+                <span>3. Configuración de Git desde VS Code</span>
+                <small class="text-light">Pasos básicos</small>
+            </div>
+            <div class="card-body">
+                <p class="mb-3">Abre la terminal integrada de Visual Studio Code</p>
+                <div class="bg-light border rounded p-3 mb-3">
+                    <code>Menú Terminal → Nueva Terminal</code>
+                </div>
+                <h6 class="mt-4 mb-2 fw-bold">Configura tu nombre y correo</h6>
+                <div class="bg-dark text-white p-3 rounded-3 mb-3">
+                    <pre class="m-0">git config --global user.name "Tu nombre completo"
+git config --global user.email "tu_correo@ejemplo.com"</pre>
+                </div>
+                <h6 class="mt-4 mb-2 fw-bold">Verifica la configuración</h6>
+                <div class="bg-dark text-white p-3 rounded-3">
+                    <pre class="m-0">git config --global --list</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border border-success border-opacity-25 rounded-4 mb-4">
+            <div class="card-header bg-success text-white d-flex justify-content-between align-items-center rounded-top-4">
+                <span>4. Inicializar Git en el proyecto</span>
+                <small class="text-light">Comandos básicos</small>
+            </div>
+            <div class="card-body">
+                <p class="mb-3">Ubícate en la carpeta del proyecto desde la terminal de VS Code</p>
+                <div class="bg-dark text-white p-3 rounded-3 mb-3">
+                    <pre class="m-0">git init
+git add .
+git commit -m "Primer commit: estructura inicial del proyecto"</pre>
+                </div>
+                <div class="alert alert-success p-3 mb-0 rounded-3">
+                    Este primer commit guarda la versión inicial del proyecto, incluyendo todos los archivos creados hasta el momento.
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border border-success border-opacity-25 rounded-4">
+            <div class="card-header bg-black text-white fs-5 fw-bold rounded-top-4">
+                5. Crear repositorio en GitHub
+            </div>
+            <div class="card-body">
+                <ol class="mb-0">
+                    <li class="mb-2">Ingresar a la página oficial de GitHub.</li>
+                    <li class="mb-2">Hacer clic en el botón <strong>New repository</strong>.</li>
+                    <li class="mb-2">Asignar un nombre al repositorio, por ejemplo: <em>taller3-bootstrap-adso</em>.</li>
+                    <li class="mb-2">Seleccionar si será público o privado según tu preferencia.</li>
+                    <li>Crear el repositorio sin agregar archivo README si el proyecto ya tiene archivos locales.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 A.PRO - Santiago Avendaño Zapata | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
